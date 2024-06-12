@@ -3,6 +3,7 @@ import Accordian from "./Components/Accordian/Accordian";
 import ColorGenerater from "./Components/ColorGenerater/ColorGenerator";
 import StarRating from "./Components/StarRating/StarRating";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
+import LoadMoreData from "./Components/LoadMoreData/LoadMoreData";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         limit={"10"}
         page={"1"}
       />
+      {/* LoadMoreData component */}
+      <LoadMoreData />
     </div>
   );
 }
