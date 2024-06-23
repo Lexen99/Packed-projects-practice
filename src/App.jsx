@@ -4,24 +4,28 @@ import ColorGenerater from "./Components/ColorGenerater/ColorGenerator";
 import StarRating from "./Components/StarRating/StarRating";
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 import LoadMoreData from "./Components/LoadMoreData/LoadMoreData";
+import TreeViewNav from "./Components/TreeViewNav/TreeViewNav";
+import menus from './Components/TreeViewNav/data'
 
 function App() {
   return (
     <div className="app">
       {/* Accordian component */}
-      <Accordian />
+      {/* <Accordian /> */}
       {/* Random color component */}
-      <ColorGenerater />
+      {/* <ColorGenerater /> */}
       {/* Star Rating component */}
-      <StarRating noOfStars={10} />
+      {/* <StarRating noOfStars={10} /> */}
       {/* ImageSlider Component */}
-      <ImageSlider
+      {/* <ImageSlider
         url={"https://picsum.photos/v2/list"}
         limit={"10"}
         page={"1"}
-      />
+      /> */}
       {/* LoadMoreData component */}
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
+      {/* Tree view component */}
+      <TreeViewNav menus={menus} />
     </div>
   );
 }
